@@ -47,7 +47,7 @@ function resta(x, y) {
 function multiplica(x, y) {
   // Multiplica "x" por "y" y devuelve el valor
   // Tu código:
-  return x - y
+  return x * y
 }
 
 function divide(x, y) {
@@ -172,8 +172,10 @@ function esPositivo(numero) {
   //Si el número es 0, devuelve false
   if (numero > 0) {
     return "Es positivo"
-  } else {
+  } else if (numero < 0) {
     return "Es negativo"
+  } else {
+    return false
   }
 }
 
@@ -195,7 +197,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return ("Hola" + nombre)
+  return ("Hola " + nombre + "!")
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
@@ -215,7 +217,7 @@ function retornarPerimetro(lado){
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-return (base * altura)
+return ((base * altura)/ 2)
 }
 
 
@@ -236,8 +238,8 @@ function esVocal(letra){
   if (letra.length != 1){
     return "Dato incorrecto"
   }
-  if (letra == "a", "e", "i", "o", "u"){
-    return "Es Vocal"
+  if (letra == "a" ||letra == "e"||letra == "i"||letra == "o"||letra == "u"){
+    return "Es vocal"
   } else{
     return "Dato incorrecto"
   }
